@@ -48,3 +48,318 @@ Message from ana (ID: 1) broadcast to 1 clients
 Message from client 2: tudo bem sim, ana
 Received message from cecilia (ID: 2): tudo bem sim, ana
 Message from cecilia (ID: 2) broadcast to 1 clients
+---- ESTATÍSTICAS DO SERVIDOR ----
+Clientes conectados: 2
+IDs de clientes ativos: 1 (ana), 2 (cecilia)
+--------------------------------
+---- ESTATÍSTICAS DO SERVIDOR ----
+Clientes conectados: 2
+IDs de clientes ativos: 1 (ana), 2 (cecilia)
+--------------------------------
+---- ESTATÍSTICAS DO SERVIDOR ----
+Clientes conectados: 2
+IDs de clientes ativos: 1 (ana), 2 (cecilia)
+--------------------------------
+Stopping server...
+Client 1 handler thread terminated
+Accept loop terminated
+Server stopped
+Stopping server...
+Failed to send message to client 2
+Client 2 handler thread terminated
+Server stopped
+Servidor inicializado e escutando na porta 8080
+Iniciando servidor...
+Servidor iniciado com sucesso. Aguardando conexões...
+Nova conexão aceita | Socket: 5 | IP: 127.0.0.1 | Porta: 54880
+Nova conexão de 127.0.0.1
+Nova conexão aceita | Socket: 6 | IP: 127.0.0.1 | Porta: 47872
+Nova conexão de 127.0.0.1
+Cliente 1 definiu nome de usuário para: ana
+Mensagem do cliente 1: oii
+Recebida mensagem de ana (ID: 1): oii
+Mensagem de ana (ID: 1) transmitida para 1 clientes
+Cliente 2 definiu nome de usuário para: cecilia
+Mensagem do cliente 2: oiii
+Recebida mensagem de cecilia (ID: 2): oiii
+Mensagem de cecilia (ID: 2) transmitida para 1 clientes
+Mensagem do cliente 1: oii 
+Recebida mensagem de ana (ID: 1): oii 
+Mensagem de ana (ID: 1) transmitida para 1 clientes
+Cliente 1 desconectado
+Mensagem de ana (ID: 1) transmitida para 1 clientes
+Thread do manipulador do cliente 1 encerrada
+Nova conexão aceita | Socket: 5 | IP: 127.0.0.1 | Porta: 53864
+Nova conexão de 127.0.0.1
+Cliente 2 desconectado
+Mensagem de cecilia (ID: 2) transmitida para 1 clientes
+Thread do manipulador do cliente 2 encerrada
+Nova conexão aceita | Socket: 6 | IP: 127.0.0.1 | Porta: 49470
+Nova conexão de 127.0.0.1
+Cliente 4 definiu nome de usuário para: ana
+Cliente 3 definiu nome de usuário para: cecilia
+Parando servidor...
+Servidor inicializado e escutando na porta 8080
+Iniciando servidor...
+Servidor iniciado com sucesso. Aguardando conexões...
+Nova conexão aceita | Socket: 5 | IP: 127.0.0.1 | Porta: 58652
+Nova conexão de 127.0.0.1
+Nova conexão aceita | Socket: 6 | IP: 127.0.0.1 | Porta: 58668
+Nova conexão de 127.0.0.1
+Cliente 1 definiu nome de usuário para: ana
+Mensagem do cliente 1: oii
+Recebida mensagem de ana (ID: 1): oii
+Mensagem de ana (ID: 1) transmitida para 1 clientes
+Cliente 2 definiu nome de usuário para: cecilia
+Mensagem do cliente 2: oii
+Recebida mensagem de cecilia (ID: 2): oii
+Mensagem de cecilia (ID: 2) transmitida para 1 clientes
+Mensagem do cliente 1: oii cecilia
+Recebida mensagem de ana (ID: 1): oii cecilia
+Mensagem de ana (ID: 1) transmitida para 1 clientes
+Mensagem do cliente 1: tudo bem??
+Recebida mensagem de ana (ID: 1): tudo bem??
+Mensagem de ana (ID: 1) transmitida para 1 clientes
+Mensagem do cliente 2: tudo bem sim, ana
+Recebida mensagem de cecilia (ID: 2): tudo bem sim, ana
+Mensagem de cecilia (ID: 2) transmitida para 1 clientes
+Parando servidor...
+Thread do manipulador do cliente 2 encerrada
+Thread do manipulador do cliente 1 encerrada
+Loop de aceitação terminado
+Servidor parado
+Parando servidor...
+Servidor parado
+Servidor inicializado e escutando na porta 8080
+Iniciando servidor...
+Servidor iniciado com sucesso. Aguardando conexões...
+Nova conexão aceita | Socket: 5 | IP: 127.0.0.1 | Porta: 37428
+Nova conexão de 127.0.0.1
+Cliente 1 definiu nome de usuário para: TestClient_1
+Nova conexão aceita | Socket: 6 | IP: 127.0.0.1 | Porta: 37434
+Nova conexão de 127.0.0.1
+Cliente 2 definiu nome de usuário para: TestClient_2
+Nova conexão aceita | Socket: 7 | IP: 127.0.0.1 | Porta: 37444
+Nova conexão de 127.0.0.1
+Cliente 3 definiu nome de usuário para: TestClient_3
+Nova conexão aceita | Socket: 8 | IP: 127.0.0.1 | Porta: 37448
+Nova conexão de 127.0.0.1
+Cliente 4 definiu nome de usuário para: TestClient_4
+Nova conexão aceita | Socket: 9 | IP: 127.0.0.1 | Porta: 37462
+Nova conexão de 127.0.0.1
+Cliente 5 definiu nome de usuário para: TestClient_5
+Nova conexão aceita | Socket: 10 | IP: 127.0.0.1 | Porta: 37464
+Nova conexão de 127.0.0.1
+Cliente 6 definiu nome de usuário para: TestClient_6
+Nova conexão aceita | Socket: 11 | IP: 127.0.0.1 | Porta: 37474
+Nova conexão de 127.0.0.1
+Cliente 7 definiu nome de usuário para: TestClient_7
+Nova conexão aceita | Socket: 12 | IP: 127.0.0.1 | Porta: 37484
+Nova conexão de 127.0.0.1
+Cliente 8 definiu nome de usuário para: TestClient_8
+Mensagem do cliente 2: Teste de carga do servidor
+Recebida mensagem de TestClient_2 (ID: 2): Teste de carga do servidor
+Mensagem de TestClient_2 (ID: 2) transmitida para 7 clientes
+Mensagem do cliente 1: Este é um teste de múltiplos clientes
+Recebida mensagem de TestClient_1 (ID: 1): Este é um teste de múltiplos clientes
+Mensagem de TestClient_1 (ID: 1) transmitida para 7 clientes
+Nova conexão aceita | Socket: 13 | IP: 127.0.0.1 | Porta: 37492
+Nova conexão de 127.0.0.1
+Cliente 9 definiu nome de usuário para: TestClient_9
+Mensagem do cliente 2: Última mensagem de teste
+Recebida mensagem de TestClient_2 (ID: 2): Última mensagem de teste
+Mensagem de TestClient_2 (ID: 2) transmitida para 8 clientes
+Mensagem do cliente 1: Teste de carga do servidor
+Recebida mensagem de TestClient_1 (ID: 1): Teste de carga do servidor
+Mensagem de TestClient_1 (ID: 1) transmitida para 8 clientes
+Mensagem do cliente 3: Esta é uma mensagem de teste
+Recebida mensagem de TestClient_3 (ID: 3): Esta é uma mensagem de teste
+Mensagem de TestClient_3 (ID: 3) transmitida para 8 clientes
+Mensagem do cliente 5: Este é um teste de múltiplos clientes
+Recebida mensagem de TestClient_5 (ID: 5): Este é um teste de múltiplos clientes
+Mensagem de TestClient_5 (ID: 5) transmitida para 8 clientes
+Nova conexão aceita | Socket: 14 | IP: 127.0.0.1 | Porta: 37506
+Nova conexão de 127.0.0.1
+Cliente 10 definiu nome de usuário para: TestClient_10
+Mensagem do cliente 4: Teste de carga do servidor
+Recebida mensagem de TestClient_4 (ID: 4): Teste de carga do servidor
+Mensagem de TestClient_4 (ID: 4) transmitida para 9 clientes
+Mensagem do cliente 3: Última mensagem de teste
+Recebida mensagem de TestClient_3 (ID: 3): Última mensagem de teste
+Mensagem de TestClient_3 (ID: 3) transmitida para 9 clientes
+Mensagem do cliente 5: O servidor está funcionando bem?
+Recebida mensagem de TestClient_5 (ID: 5): O servidor está funcionando bem?
+Mensagem de TestClient_5 (ID: 5) transmitida para 9 clientes
+Mensagem do cliente 2: Quero ver se todos recebem essa mensagem
+Recebida mensagem de TestClient_2 (ID: 2): Quero ver se todos recebem essa mensagem
+Mensagem de TestClient_2 (ID: 2) transmitida para 9 clientes
+Mensagem do cliente 3: Testando comunicação concorrente
+Recebida mensagem de TestClient_3 (ID: 3): Testando comunicação concorrente
+Mensagem de TestClient_3 (ID: 3) transmitida para 9 clientes
+Mensagem do cliente 6: O servidor está funcionando bem?
+Recebida mensagem de TestClient_6 (ID: 6): O servidor está funcionando bem?
+Mensagem de TestClient_6 (ID: 6) transmitida para 9 clientes
+Mensagem do cliente 8: Alguém está recebendo minhas mensagens?
+Recebida mensagem de TestClient_8 (ID: 8): Alguém está recebendo minhas mensagens?
+Mensagem de TestClient_8 (ID: 8) transmitida para 9 clientes
+Mensagem do cliente 2: Esta é uma mensagem de teste
+Recebida mensagem de TestClient_2 (ID: 2): Esta é uma mensagem de teste
+Mensagem de TestClient_2 (ID: 2) transmitida para 9 clientes
+Mensagem do cliente 3: Este é um teste de múltiplos clientes
+Recebida mensagem de TestClient_3 (ID: 3): Este é um teste de múltiplos clientes
+Mensagem de TestClient_3 (ID: 3) transmitida para 9 clientes
+Mensagem do cliente 4: Quero ver se todos recebem essa mensagem
+Recebida mensagem de TestClient_4 (ID: 4): Quero ver se todos recebem essa mensagem
+Mensagem de TestClient_4 (ID: 4) transmitida para 9 clientes
+Mensagem do cliente 1: Testando o broadcast de mensagens
+Recebida mensagem de TestClient_1 (ID: 1): Testando o broadcast de mensagens
+Mensagem de TestClient_1 (ID: 1) transmitida para 9 clientes
+Mensagem do cliente 7: Este é um teste de múltiplos clientes
+Recebida mensagem de TestClient_7 (ID: 7): Este é um teste de múltiplos clientes
+Mensagem de TestClient_7 (ID: 7) transmitida para 9 clientes
+Mensagem do cliente 5: Testando comunicação concorrente
+Recebida mensagem de TestClient_5 (ID: 5): Testando comunicação concorrente
+Mensagem de TestClient_5 (ID: 5) transmitida para 9 clientes
+Mensagem do cliente 2: Quero ver se todos recebem essa mensagem
+Recebida mensagem de TestClient_2 (ID: 2): Quero ver se todos recebem essa mensagem
+Mensagem de TestClient_2 (ID: 2) transmitida para 9 clientes
+Mensagem do cliente 3: Quero ver se todos recebem essa mensagem
+Recebida mensagem de TestClient_3 (ID: 3): Quero ver se todos recebem essa mensagem
+Mensagem de TestClient_3 (ID: 3) transmitida para 9 clientes
+Mensagem do cliente 9: Olá, como estão todos?
+Recebida mensagem de TestClient_9 (ID: 9): Olá, como estão todos?
+Mensagem de TestClient_9 (ID: 9) transmitida para 9 clientes
+Mensagem do cliente 6: Este é um teste de múltiplos clientes
+Recebida mensagem de TestClient_6 (ID: 6): Este é um teste de múltiplos clientes
+Mensagem de TestClient_6 (ID: 6) transmitida para 9 clientes
+Mensagem do cliente 7: Esta é uma mensagem de teste
+Recebida mensagem de TestClient_7 (ID: 7): Esta é uma mensagem de teste
+Mensagem de TestClient_7 (ID: 7) transmitida para 9 clientes
+Mensagem do cliente 10: Testando comunicação concorrente
+Recebida mensagem de TestClient_10 (ID: 10): Testando comunicação concorrente
+Mensagem de TestClient_10 (ID: 10) transmitida para 9 clientes
+Mensagem do cliente 5: Última mensagem de teste
+Recebida mensagem de TestClient_5 (ID: 5): Última mensagem de teste
+Mensagem de TestClient_5 (ID: 5) transmitida para 9 clientes
+Mensagem do cliente 8: Este é um teste de múltiplos clientes
+Recebida mensagem de TestClient_8 (ID: 8): Este é um teste de múltiplos clientes
+Mensagem de TestClient_8 (ID: 8) transmitida para 9 clientes
+Mensagem do cliente 4: Alguém está recebendo minhas mensagens?
+Recebida mensagem de TestClient_4 (ID: 4): Alguém está recebendo minhas mensagens?
+Mensagem de TestClient_4 (ID: 4) transmitida para 9 clientes
+Mensagem do cliente 6: Testando o broadcast de mensagens
+Recebida mensagem de TestClient_6 (ID: 6): Testando o broadcast de mensagens
+Mensagem de TestClient_6 (ID: 6) transmitida para 9 clientes
+Mensagem do cliente 7: O servidor está funcionando bem?
+Recebida mensagem de TestClient_7 (ID: 7): O servidor está funcionando bem?
+Mensagem de TestClient_7 (ID: 7) transmitida para 9 clientes
+Mensagem do cliente 1: Olá, como estão todos?
+Recebida mensagem de TestClient_1 (ID: 1): Olá, como estão todos?
+Mensagem de TestClient_1 (ID: 1) transmitida para 9 clientes
+Mensagem do cliente 9: Testando o broadcast de mensagens
+Recebida mensagem de TestClient_9 (ID: 9): Testando o broadcast de mensagens
+Mensagem de TestClient_9 (ID: 9) transmitida para 9 clientes
+Mensagem do cliente 8: Alguém está recebendo minhas mensagens?
+Recebida mensagem de TestClient_8 (ID: 8): Alguém está recebendo minhas mensagens?
+Mensagem de TestClient_8 (ID: 8) transmitida para 9 clientes
+Mensagem do cliente 4: Testando comunicação concorrente
+Recebida mensagem de TestClient_4 (ID: 4): Testando comunicação concorrente
+Mensagem de TestClient_4 (ID: 4) transmitida para 9 clientes
+Mensagem do cliente 1: Este é um teste de múltiplos clientes
+Recebida mensagem de TestClient_1 (ID: 1): Este é um teste de múltiplos clientes
+Mensagem de TestClient_1 (ID: 1) transmitida para 9 clientes
+Mensagem do cliente 5: Teste de carga do servidor
+Recebida mensagem de TestClient_5 (ID: 5): Teste de carga do servidor
+Mensagem de TestClient_5 (ID: 5) transmitida para 9 clientes
+Mensagem do cliente 9: Olá, como estão todos?
+Recebida mensagem de TestClient_9 (ID: 9): Olá, como estão todos?
+Mensagem de TestClient_9 (ID: 9) transmitida para 9 clientes
+Mensagem do cliente 7: Testando comunicação concorrente
+Recebida mensagem de TestClient_7 (ID: 7): Testando comunicação concorrente
+Mensagem de TestClient_7 (ID: 7) transmitida para 9 clientes
+Mensagem do cliente 10: Testando o broadcast de mensagens
+Recebida mensagem de TestClient_10 (ID: 10): Testando o broadcast de mensagens
+Mensagem de TestClient_10 (ID: 10) transmitida para 9 clientes
+Mensagem do cliente 8: Testando comunicação concorrente
+Recebida mensagem de TestClient_8 (ID: 8): Testando comunicação concorrente
+Mensagem de TestClient_8 (ID: 8) transmitida para 9 clientes
+Mensagem do cliente 8: Alguém está recebendo minhas mensagens?
+Recebida mensagem de TestClient_8 (ID: 8): Alguém está recebendo minhas mensagens?
+Mensagem de TestClient_8 (ID: 8) transmitida para 9 clientes
+Mensagem do cliente 6: Testando comunicação concorrente
+Recebida mensagem de TestClient_6 (ID: 6): Testando comunicação concorrente
+Mensagem de TestClient_6 (ID: 6) transmitida para 9 clientes
+Mensagem do cliente 7: Testando comunicação concorrente
+Recebida mensagem de TestClient_7 (ID: 7): Testando comunicação concorrente
+Mensagem de TestClient_7 (ID: 7) transmitida para 9 clientes
+Mensagem do cliente 4: O servidor está funcionando bem?
+Recebida mensagem de TestClient_4 (ID: 4): O servidor está funcionando bem?
+Mensagem de TestClient_4 (ID: 4) transmitida para 9 clientes
+Mensagem do cliente 9: Testando comunicação concorrente
+Recebida mensagem de TestClient_9 (ID: 9): Testando comunicação concorrente
+Cliente 2 desconectado
+Mensagem de TestClient_9 (ID: 9) transmitida para 9 clientes
+Mensagem de TestClient_2 (ID: 2) transmitida para 9 clientes
+Thread do manipulador do cliente 2 encerrada
+Mensagem do cliente 10: Alguém está recebendo minhas mensagens?
+Recebida mensagem de TestClient_10 (ID: 10): Alguém está recebendo minhas mensagens?
+Mensagem de TestClient_10 (ID: 10) transmitida para 8 clientes
+Mensagem do cliente 6: Quero ver se todos recebem essa mensagem
+Recebida mensagem de TestClient_6 (ID: 6): Quero ver se todos recebem essa mensagem
+Cliente 3 desconectado
+Mensagem de TestClient_6 (ID: 6) transmitida para 8 clientes
+Mensagem de TestClient_3 (ID: 3) transmitida para 8 clientes
+Thread do manipulador do cliente 3 encerrada
+Mensagem do cliente 9: Testando comunicação concorrente
+Recebida mensagem de TestClient_9 (ID: 9): Testando comunicação concorrente
+Mensagem de TestClient_9 (ID: 9) transmitida para 7 clientes
+Mensagem do cliente 10: Alguém está recebendo minhas mensagens?
+Recebida mensagem de TestClient_10 (ID: 10): Alguém está recebendo minhas mensagens?
+Mensagem de TestClient_10 (ID: 10) transmitida para 7 clientes
+Mensagem do cliente 10: Testando comunicação concorrente
+Recebida mensagem de TestClient_10 (ID: 10): Testando comunicação concorrente
+Cliente 1 desconectado
+Mensagem de TestClient_10 (ID: 10) transmitida para 7 clientes
+Cliente 8 desconectado
+Mensagem de TestClient_1 (ID: 1) transmitida para 7 clientes
+Thread do manipulador do cliente 1 encerrada
+Servidor inicializado e escutando na porta 8080
+Iniciando servidor...
+Servidor iniciado com sucesso. Aguardando conexões...
+Nova conexão aceita | Socket: 5 | IP: 127.0.0.1 | Porta: 50432
+Nova conexão de 127.0.0.1
+Parando servidor...
+Loop de aceitação terminado
+Servidor parado
+Parando servidor...
+Falha ao enviar mensagem para o cliente 1
+Servidor parado
+Servidor inicializado e escutando na porta 8080
+Iniciando servidor...
+Servidor iniciado com sucesso. Aguardando conexões...
+Nova conexão aceita | Socket: 5 | IP: 127.0.0.1 | Porta: 51052
+Nova conexão de 127.0.0.1
+Cliente 1 definiu nome de usuário para: ana
+Nova conexão aceita | Socket: 6 | IP: 127.0.0.1 | Porta: 57606
+Nova conexão de 127.0.0.1
+Cliente 2 definiu nome de usuário para: cecilia
+Nova conexão aceita | Socket: 7 | IP: 127.0.0.1 | Porta: 37174
+Nova conexão de 127.0.0.1
+Cliente 3 definiu nome de usuário para: caio
+Mensagem do cliente 1: oii, gente!
+Recebida mensagem de ana (ID: 1): oii, gente!
+Mensagem de ana (ID: 1) transmitida para 2 clientes
+Mensagem do cliente 3: Oii, ana! Tudo bem?
+Recebida mensagem de caio (ID: 3): Oii, ana! Tudo bem?
+Mensagem de caio (ID: 3) transmitida para 2 clientes
+Mensagem do cliente 2: Oii, galera!!
+Recebida mensagem de cecilia (ID: 2): Oii, galera!!
+Mensagem de cecilia (ID: 2) transmitida para 2 clientes
+Parando servidor...
+Thread do manipulador do cliente 2 encerrada
+Thread do manipulador do cliente 3 encerrada
+Thread do manipulador do cliente 1 encerrada
+Loop de aceitação terminado
+Servidor parado
+Parando servidor...
+Servidor parado

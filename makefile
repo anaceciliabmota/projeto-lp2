@@ -82,3 +82,16 @@ run-client: $(CLIENT_TARGET)
 	./$(CLIENT_TARGET)
 
 .PHONY: all clean run-server run-client
+
+# Adicione estas linhas ao seu Makefile existente
+
+# Compilação do script de teste
+test_client: src/test_multi_client.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -o test_multi_client $< $(LDFLAGS)
+
+# Regra para executar o teste
+run-test: test_client
+	./test_multi_client
+
+# Adicione test_client e run-test à lista de .PHONY
+.PHONY: all clean run-server run-client test_client run-test

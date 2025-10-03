@@ -5,92 +5,92 @@
 #include <cstring>
 #include <unistd.h>
 
-// Static counter for generating unique client IDs
+// Contador estático para gerar IDs únicos de cliente
 static int next_client_id = 1;
 
-// Constructor: Initialize socket and client ID
+// Construtor: Inicializa o socket e o ID do cliente
 Client::Client(int socket_fd, int client_id) : socket(socket_fd), id(client_id) {
-    // Initialize with default username
+    // Inicializa com nome de usuário padrão
     username = "Anonymous_" + std::to_string(id);
 }
 
-// Destructor: Close socket and free resources
+// Destrutor: Fecha o socket e libera recursos
 Client::~Client() {
-    // Only close if socket is valid
+    // Fecha apenas se o socket for válido
     if (socket >= 0) {
         close(socket);
         socket = -1;
     }
 }
 
-// Send a message to this client
+// Envia uma mensagem para este cliente
 bool Client::sendMessage(const Message& msg) {
     try {
-        // Serialize message to string format
+        // Serializa a mensagem para formato de string
         std::string serialized = msg.serialize();
         
-        // Send the message through the socket
+        // Envia a mensagem através do socket
         ssize_t bytes_sent = send(socket, serialized.c_str(), serialized.length(), 0);
         
-        // Check if send was successful
+        // Verifica se o envio foi bem-sucedido
         if (bytes_sent < 0) {
-            std::cerr << "Error sending message: " << strerror(errno) << std::endl;
+            std::cerr << "Erro ao enviar mensagem: " << strerror(errno) << std::endl;
             return false;
         }
         
         return true;
     } catch (const std::exception& e) {
-        std::cerr << "Exception while sending message: " << e.what() << std::endl;
+        std::cerr << "Exceção ao enviar mensagem: " << e.what() << std::endl;
         return false;
     }
 }
 
-// Receive a message from this client
+// Recebe uma mensagem deste cliente
 bool Client::receiveMessage(Message& msg) {
     const int BUFFER_SIZE = 1024;
     char buffer[BUFFER_SIZE];
     
-    // Clear buffer before receiving
+    // Limpa o buffer antes de receber
     memset(buffer, 0, BUFFER_SIZE);
     
-    // Receive data from socket
+    // Recebe dados do socket
     ssize_t bytes_received = recv(socket, buffer, BUFFER_SIZE - 1, 0);
     
-    // Check for errors or disconnection
+    // Verifica erros ou desconexão
     if (bytes_received <= 0) {
-        // Connection closed or error
+        // Conexão fechada ou erro
         return false;
     }
     
-    // Null-terminate the received data
+    // Termina os dados recebidos com null
     buffer[bytes_received] = '\0';
     
     try {
-        // Convert received data to Message object
+        // Converte os dados recebidos para um objeto Message
         msg = Message::deserialize(buffer);
         return true;
     } catch (const std::exception& e) {
-        std::cerr << "Error deserializing message: " << e.what() << std::endl;
+        std::cerr << "Erro ao desserializar mensagem: " << e.what() << std::endl;
         return false;
     }
 }
 
-// Return client's unique ID
+// Retorna o ID único do cliente
 int Client::getId() const {
     return id;
 }
 
-// Return client's username
+// Retorna o nome de usuário do cliente
 std::string Client::getUsername() const {
     return username;
 }
 
-// Set client's username
+// Define o nome de usuário do cliente
 void Client::setUsername(const std::string& name) {
     username = name;
 }
 
-// Return socket file descriptor (needed for server communication)
+// Retorna o descritor de arquivo do socket (necessário para comunicação com o servidor)
 int Client::getSocket() const {
     return socket;
 }

@@ -5,51 +5,51 @@
 #include <string>
 #include <csignal>
 
-// Define server port
+// Define a porta do servidor
 const int PORT = 8080;
 
-// Flag for clean shutdown on signal
+// Flag para desligamento limpo ao receber sinal
 volatile std::sig_atomic_t running = true;
 
-// Signal handler for graceful shutdown
+// Manipulador de sinais para desligamento gracioso
 void signal_handler(int signal) {
     running = false;
-    std::cout << "\nShutdown signal received. Stopping server..." << std::endl;
+    std::cout << "\nSinal de desligamento recebido. Parando servidor..." << std::endl;
 }
 
 int main() {
-    // Initialize signal handling
-    std::signal(SIGINT, signal_handler);  // Handle Ctrl+C
-    std::signal(SIGTERM, signal_handler); // Handle termination signal
+    // Inicializa tratamento de sinais
+    std::signal(SIGINT, signal_handler);  // Trata Ctrl+C
+    std::signal(SIGTERM, signal_handler); // Trata sinal de terminação
     
-    // Initialize logger
+    // Inicializa o logger
     init_logger("server.log");
     
     try {
-        std::cout << "Starting chat server on port " << PORT << "..." << std::endl;
+        std::cout << "Iniciando servidor de chat na porta " << PORT << "..." << std::endl;
         
-        // Create and start the server
+        // Cria e inicia o servidor
         ChatServer server(PORT);
         server.start();
         
-        std::cout << "Server is running. Enter 'stop' to shut down." << std::endl;
+        std::cout << "Servidor em execução. Digite 'stop' para desligar." << std::endl;
         
-        // Keep the server running until signal or command is received
+        // Mantém o servidor rodando até que um sinal ou comando seja recebido
         std::string command;
         while (running) {
-            // Check for "stop" command from console
+            // Verifica se o comando "stop" foi digitado no console
             if (std::getline(std::cin, command) && command == "stop") {
                 break;
             }
         }
         
-        // Stop the server gracefully
-        std::cout << "Stopping server..." << std::endl;
+        // Para o servidor de forma graciosa
+        std::cout << "Parando servidor..." << std::endl;
         server.stop();
-        std::cout << "Server stopped." << std::endl;
+        std::cout << "Servidor parado." << std::endl;
         
     } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
+        std::cerr << "Erro: " << e.what() << std::endl;
         close_logger();
         return 1;
     }
