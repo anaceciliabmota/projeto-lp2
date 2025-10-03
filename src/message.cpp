@@ -1,4 +1,4 @@
-#include "message.h"
+#include "../include/message.h"
 #include <sstream>
 
 Message::Message() : sender_id(-1), timestamp(std::time(nullptr)) {

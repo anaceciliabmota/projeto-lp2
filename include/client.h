@@ -23,4 +23,5 @@ public:
     int getId() const;                      // Retorna o ID único do cliente
     std::string getUsername() const;        // Retorna o nome de usuário
     void setUsername(const std::string& name); // Define o nome de usuário
+    int getSocket() const;                // Retorna o descritor do socket
 };

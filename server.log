@@ -1,0 +1,50 @@
+Server initialized and listening on port 8080
+Starting server...
+Server started successfully. Awaiting connections...
+New connection accepted | Socket: 5 | IP: 127.0.0.1 | Port: 33864
+New connection from 127.0.0.1
+Client 1 set username to: ana
+New connection accepted | Socket: 6 | IP: 127.0.0.1 | Port: 47272
+New connection from 127.0.0.1
+Client 2 set username to: cecilia
+Message from client 1: oii cecilia
+Received message from ana (ID: 1): oii cecilia
+Message from ana (ID: 1) broadcast to 1 clients
+Message from client 2: oii ana
+Received message from cecilia (ID: 2): oii ana
+Message from cecilia (ID: 2) broadcast to 1 clients
+Stopping server...
+Client 2 handler thread terminated
+Client 1 handler thread terminated
+Accept loop terminated
+Server initialized and listening on port 8080
+Starting server...
+Server started successfully. Awaiting connections...
+Stopping server...
+Accept loop terminated
+Server initialized and listening on port 8080
+Starting server...
+Server started successfully. Awaiting connections...
+Stopping server...
+Accept loop terminated
+Server stopped
+Stopping server...
+Server stopped
+Server initialized and listening on port 8080
+Starting server...
+Server started successfully. Awaiting connections...
+New connection accepted | Socket: 5 | IP: 127.0.0.1 | Port: 48604
+New connection from 127.0.0.1
+Client 1 set username to: ana
+New connection accepted | Socket: 6 | IP: 127.0.0.1 | Port: 48620
+New connection from 127.0.0.1
+Client 2 set username to: cecilia
+Message from client 2: oiee
+Received message from cecilia (ID: 2): oiee
+Message from cecilia (ID: 2) broadcast to 1 clients
+Message from client 1: oii cecilia, tudo bem??
+Received message from ana (ID: 1): oii cecilia, tudo bem??
+Message from ana (ID: 1) broadcast to 1 clients
+Message from client 2: tudo bem sim, ana
+Received message from cecilia (ID: 2): tudo bem sim, ana
+Message from cecilia (ID: 2) broadcast to 1 clients

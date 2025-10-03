@@ -33,4 +33,5 @@ public:
 private:
     void acceptClients();               // Loop que aceita novas conexões de clientes
     void handleClient(std::shared_ptr<Client> client); // Gerencia comunicação com um cliente específico
+    void logStats();
 };
