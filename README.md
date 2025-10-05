@@ -33,21 +33,31 @@ Este projeto inclui um script de teste para simular vários clientes conectando-
    # Executa o teste completo (compila, inicia servidor se necessário e executa)
    ./run_tests.sh
 
-## 3. Funcionalidades Implementadas (Etapa 2) 
-Funcionalidades Implementadas (Etapa 2)
-### 1. Servidor Multithreaded
+## 3. Funcionalidades Implementadas  
+
+
+### 1. Biblioteca de Logging Thread-Safe (libtslog)
+A biblioteca libtslog implementa um sistema de logging thread-safe com uma API clara e concisa:
+
+[libtslog.h](src/libtslog/libtslog.h): Interface pública da biblioteca
+ - init_logger(filename): Inicializa o logger com um arquivo específico
+ - log_message(message): Registra uma mensagem de forma thread-safe
+ - close_logger(): Finaliza o logger e libera recursos
+libtslog.cpp: Implementação usando mutex para exclusão mútua
+
+### 2. Servidor Multithreaded
 - Implementação de um servidor que gerencia múltiplas conexões concorrentes
 - Utilização de threads para lidar com cada cliente separadamente
 - Sistema de identificação única para cada cliente conectado
-### 2. Gerenciamento de Clientes
+### 3. Gerenciamento de Clientes
 - Lista thread-safe para gerenciamento seguro de clientes conectados
 - Detecção automática de desconexões
 - Mecanismo de nomes de usuário personalizáveis
-### 3. Comunicação em Rede
+### 4. Comunicação em Rede
 - Protocolo de comunicação cliente-servidor via sockets TCP/IP
 - Formato de mensagem serializado para transmissão confiável
 - Sistema de broadcast para enviar mensagens a todos os clientes conectados
-### 4. Interface de Cliente
+### 5. Interface de Cliente
 - Cliente de linha de comando para conexão ao servidor
 - Sistema de envio e recebimento de mensagens em tempo real
 - Suporte a comandos especiais como alteração de nome de usuário
@@ -60,6 +70,10 @@ Funcionalidades Implementadas (Etapa 2)
 
 [requisitos_atendidos.md](docs/requisitos_atendidos.md): Verificação dos requisitos atendidos
 
-### 5. Vídeo de execução
+### 5. Diagrama de sequência Cliente-servidor
+Este diagrama ilustra o fluxo de comunicação entre os clientes e o servidor de chat multiusuário, com ênfase na concorrência e no uso da lista de clientes thread-safe.
+![Diagrama de Sequência do Chat](docs/diagrama_sequencia.png)
+
+### 6. Vídeo de execução
 
 link pro vídeo de demonstração: https://youtu.be/taHNfdk8w1A
