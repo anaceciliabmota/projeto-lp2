@@ -1,4 +1,4 @@
-# Servidor de Chat Multiusuário - Etapa 2
+# Servidor de Chat Multiusuário - Etapa Final
 
 Este projeto implementa um servidor de chat multiusuário com foco em programação concorrente e comunicação em rede. A segunda etapa focou na criação de um protótipo funcional para o servidor de chat multiusuário, estabelecendo a comunicação básica entre cliente e servidor.
 
@@ -72,7 +72,7 @@ libtslog.cpp: Implementação usando mutex para exclusão mútua
 
 ### 5. Diagrama de sequência Cliente-servidor
 Este diagrama ilustra o fluxo de comunicação entre os clientes e o servidor de chat multiusuário, com ênfase na concorrência e no uso da lista de clientes thread-safe.
-![Diagrama de Sequência do Chat](docs/diagrama_sequencia.png)
+![Diagrama de Sequência do Chat](docs/diagrama.png)
 
 ### 6. Vídeo de execução
 
